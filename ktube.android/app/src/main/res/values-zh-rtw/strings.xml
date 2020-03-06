@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">視頻（最佳）</string>
+  <string name="title_million_video">視頻（百萬視圖）</string>
+  <string name="title_lyrics">歌詞</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">卡拉OK</string>
+  <string name="title_artist">藝術家</string>
+  <string name="title_search">SEARCH</string>
+
+  <string name="label_title_new">新視頻</string>
+  <string name="label_title_best_d1">昨天最好</string>
+  <string name="label_title_best_d7">過去7天最佳</string>
+  <string name="label_title_best_d30">過去30天最佳</string>
+  <string name="label_title_lifetime">所有</string>
+
+  <string name="label_video_million">超過1000萬的視圖</string>
+  <string name="label_video_best">最佳視頻</string>
+  <string name="label_fancam_best">最佳FANCAM</string>
+  <string name="label_lyric_best">最佳歌詞</string>
+  <string name="label_karaoke_best">最佳卡拉OK</string>
+  <string name="label_artist_best">最佳藝術家</string>
+
+  <string name="label_share">分享Via</string>
+
+  <string name="noti_message">你有沒有看過？</string>
+  <string name="message_notice_about_image_service">由於圖像版權問題，我們將暫時停止提供圖像。</string>
+  <string name="message_notice_about_youtube_terms">要符合YouTube服務條款：\n- 不會下載YouTube視頻或mp3文件。\n- 不在後台播放視頻。\n- 不會緩存視頻或支持離線播放。\n- 不在鎖定屏幕上播放視頻或關閉屏幕。\n\n但是，您可以使用彈出式播放器。 它確實支持多任務處理和播放器鎖定模式。</string>
+  <string name="message_notice_about_youtube_terms_u21">要符合YouTube服務條款：\n- 不會下載YouTube視頻或mp3文件。\n- 不在後台播放視頻。\n- 不會緩存視頻或支持離線播放。\n- 不在鎖定屏幕上播放視頻或關閉屏幕。</string>
+</resources>

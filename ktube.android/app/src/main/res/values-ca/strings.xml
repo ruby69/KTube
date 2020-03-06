@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">VIDEO (Millor)</string>
+  <string name="title_million_video">VIDEO (milions de vistes)</string>
+  <string name="title_lyrics">LLETRES</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">ARTIST</string>
+  <string name="title_search">CERCA</string>
+
+  <string name="label_title_new">nou</string>
+  <string name="label_title_best_d1">Millor d\'ahir</string>
+  <string name="label_title_best_d7">Últims 7 dies Millor</string>
+  <string name="label_title_best_d30">Últims 30 dies Millor</string>
+  <string name="label_title_lifetime">TOTS</string>
+
+  <string name="label_video_million">MÉS DE 10 MILIONS VISTES</string>
+  <string name="label_video_best">MILLOR VÍDEO</string>
+  <string name="label_fancam_best">MILLOR FANCAM</string>
+  <string name="label_lyric_best">MILLOR LYRIC</string>
+  <string name="label_karaoke_best">MILLOR KARAOKE</string>
+  <string name="label_artist_best">MILLOR ARTISTA</string>
+
+  <string name="label_share">compartir Via</string>
+
+  <string name="noti_message">Alguna vegada has vist?</string>
+  <string name="message_notice_about_image_service">A causa dels problemes de drets d\'imatge, deixarem de publicar temporalment les imatges.</string>
+  <string name="message_notice_about_youtube_terms">Per complir les Condicions d\'ús de YouTube:\n- No descarrega vídeos de YouTube o fitxers mp3.\n- No reprodueix vídeos en segon pla.\n- no emmagatzemar en memòria cau els vídeos ni tampoc no permet la reproducció fora de línia.\n- No reprodueix vídeos a la pantalla de bloqueig o quan la pantalla està apagada.\n\nPerò, podeu utilitzar el reproductor de finestres emergents per fer diverses tasques i el mode de bloqueig del reproductor.</string>
+  <string name="message_notice_about_youtube_terms_u21">Per complir les Condicions d\'ús de YouTube:\n- No descarrega vídeos de YouTube o fitxers mp3.\n- No reprodueix vídeos en segon pla.\n- no emmagatzemar en memòria cau els vídeos ni tampoc no permet la reproducció fora de línia.\n- No reprodueix vídeos a la pantalla de bloqueig o quan la pantalla està apagada.</string>
+</resources>

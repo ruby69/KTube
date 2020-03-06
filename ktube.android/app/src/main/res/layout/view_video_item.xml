@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout
+    android:id="@+id/itemSelector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_quarter"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center">
+
+    <include layout="@layout/view_video_item_type_large"/>
+
+    <include layout="@layout/view_video_item_type_medium"/>
+
+    <include layout="@layout/view_video_item_type_small"/>
+
+  </LinearLayout>
+
+</merge>

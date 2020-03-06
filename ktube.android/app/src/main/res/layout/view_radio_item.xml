@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_half">
+
+    <RelativeLayout
+      android:id="@+id/itemSelector"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="?android:selectableItemBackground"
+      android:clickable="true"
+      android:focusable="true"
+      android:padding="@dimen/spacing_2x">
+
+      <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:contentDescription="@string/app_name"/>
+
+      <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_1x"/>
+
+    </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+</merge>

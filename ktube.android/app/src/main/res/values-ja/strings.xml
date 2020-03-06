@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">ビデオ（ベスト）</string>
+  <string name="title_million_video">ビデオ (1,000万以上)</string>
+  <string name="title_lyrics">歌詞</string>
+  <string name="title_fancam">ファンカム</string>
+  <string name="title_karaoke">カラオケ</string>
+  <string name="title_artist">アーティスト</string>
+  <string name="title_search">SEARCH</string>
+
+  <string name="label_title_new">新しい</string>
+  <string name="label_title_best_d1">昨日のベスト</string>
+  <string name="label_title_best_d7">過去7日間のベスト</string>
+  <string name="label_title_best_d30">過去30日間のベスト</string>
+  <string name="label_title_lifetime">すべて</string>
+
+  <string name="label_video_million">1,000万以上の視野</string>
+  <string name="label_video_best">ベスト・ビデオ</string>
+  <string name="label_fancam_best">ベスト・ファンシー</string>
+  <string name="label_lyric_best">ベスト・歌詞</string>
+  <string name="label_karaoke_best">ベスト・カラオケ</string>
+  <string name="label_artist_best">ベスト・アーティスト</string>
+
+  <string name="label_share">共有経由</string>
+
+  <string name="noti_message">あなたは見たことがありますか？</string>
+  <string name="message_notice_about_image_service">画像の著作権の問題により、一時的に画像の配信が停止されます。</string>
+  <string name="message_notice_about_youtube_terms">YouTube利用規約を満たすには：\n- YouTubeの動画やmp3ファイルをダウンロードしません。\n- バックグラウンドで動画を再生しません。\n- ビデオをキャッシュしたり、オフライン再生をサポートしたりしません。\n- ロック画面または画面がオフのときにビデオを再生しません。\n\n代わりに、ポップアッププレイヤーを使用することができます。 マルチタスキングとプレーヤーロックモードをサポートしています。</string>
+  <string name="message_notice_about_youtube_terms_u21">YouTube利用規約を満たすには：\n- YouTubeの動画やmp3ファイルをダウンロードしません。\n- バックグラウンドで動画を再生しません。\n- ビデオをキャッシュしたり、オフライン再生をサポートしたりしません。\n- ロック画面または画面がオフのときにビデオを再生しません。</string>
+</resources>

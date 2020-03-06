@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <RelativeLayout
+    android:id="@+id/floatingLayer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.player.YouTubePlayerView
+      android:id="@+id/youtubeView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+    <ImageButton
+      android:id="@+id/lock"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="?android:selectableItemBackground"
+      android:paddingEnd="@dimen/spacing_2x"
+      android:paddingBottom="@dimen/spacing_2x"
+      android:src="@drawable/ic_lock_outline_black_24dp"
+      android:tint="@color/white"/>
+
+    <ImageButton
+      android:id="@+id/close"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:background="?android:selectableItemBackground"
+      android:paddingStart="@dimen/spacing_2x"
+      android:paddingBottom="@dimen/spacing_2x"
+      android:src="@drawable/ic_close_black_24dp"
+      android:tint="@color/white"/>
+
+    <ImageButton
+      android:id="@+id/playMode"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/youtubeView"
+      android:layout_alignParentEnd="true"
+      android:background="?android:selectableItemBackground"
+      android:paddingStart="@dimen/spacing_2x"
+      android:paddingTop="@dimen/spacing_2x"
+      android:src="@drawable/ic_repeat_black_24dp"
+      android:tint="@color/white"/>
+
+    <ImageButton
+      android:id="@+id/resize"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/youtubeView"
+      android:background="?android:selectableItemBackground"
+      android:paddingTop="@dimen/spacing_2x"
+      android:paddingEnd="@dimen/spacing_2x"
+      android:src="@drawable/ic_transform_black_24dp"
+      android:tint="@color/white"/>
+
+    <View
+      android:id="@+id/mask"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone"/>
+  </RelativeLayout>
+
+</merge>

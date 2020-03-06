@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">VIDEO (Tốt nhất)</string>
+  <string name="title_million_video">VIDEO (Triệu lượt xem)</string>
+  <string name="title_lyrics">LYRICS</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">Nghệ sĩ</string>
+  <string name="title_search">SEARCH</string>
+
+  <string name="label_title_new">Mới</string>
+  <string name="label_title_best_d1">Hôm qua nhất</string>
+  <string name="label_title_best_d7">7 ngày qua</string>
+  <string name="label_title_best_d30">30 ngày qua</string>
+  <string name="label_title_lifetime">TẤT CẢ CÁC</string>
+
+  <string name="label_video_million">TRÊN 10 TRIỆU TRIỆU</string>
+  <string name="label_video_best">TỐT NHẤT VIDEO</string>
+  <string name="label_fancam_best">TỐT NHẤT FANCAM</string>
+  <string name="label_lyric_best">TỐT NHẤT LYRIC</string>
+  <string name="label_karaoke_best">TỐT NHẤT KARAOKE</string>
+  <string name="label_artist_best">TỐT NHẤT Nghệ sĩ</string>
+
+  <string name="label_share">Chia sẻ qua</string>
+
+  <string name="noti_message">bạn đã bao giờ xem?</string>
+  <string name="message_notice_about_image_service">Do vấn đề bản quyền hình ảnh, chúng tôi sẽ tạm thời ngừng phân phát hình ảnh.</string>
+  <string name="message_notice_about_youtube_terms">Để đáp ứng Điều khoản dịch vụ của YouTube:\n- không tải xuống các video trên YouTube hoặc các tệp tin mp3.\n- không phát video ở chế độ nền.\n- không cache video hoặc hỗ trợ phát lại ngoại tuyến.\n- không phát video trên màn hình khóa hoặc màn hình bị tắt.\n\nTuy nhiên, bạn có thể sử dụng trình đơn bật lên. Nó hỗ trợ đa nhiệm và chế độ khóa người chơi.</string>
+  <string name="message_notice_about_youtube_terms_u21">Để đáp ứng Điều khoản dịch vụ của YouTube:\n- không tải xuống các video trên YouTube hoặc các tệp tin mp3.\n- không phát video ở chế độ nền.\n- không cache video hoặc hỗ trợ phát lại ngoại tuyến.\n- không phát video trên màn hình khóa hoặc màn hình bị tắt.</string>
+</resources>

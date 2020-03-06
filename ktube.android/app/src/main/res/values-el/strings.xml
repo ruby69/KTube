@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">Βίντεο (καλύτερη)</string>
+  <string name="title_million_video">Βίντεο (εκατομμύρια προβολές)</string>
+  <string name="title_lyrics">LYRICS</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">ΚΑΛΛΙΤΕΧΝΗΣ</string>
+  <string name="title_search">ΕΡΕΥΝΑ</string>
+
+  <string name="label_title_new">Νέος</string>
+  <string name="label_title_best_d1">Best χθεσινή</string>
+  <string name="label_title_best_d7">Τελευταίες 7 ημέρες Best</string>
+  <string name="label_title_best_d30">Τελευταίες 30 ημέρες Best</string>
+  <string name="label_title_lifetime">ΟΛΑ</string>
+
+  <string name="label_video_million">ΠΑΡΟΥΣΙΑ 10 ΕΚΑΤΟΜΜΥΡΙΑ</string>
+  <string name="label_video_best">BEST Βίντεο</string>
+  <string name="label_fancam_best">BEST FANCAM</string>
+  <string name="label_lyric_best">BEST LYRIC</string>
+  <string name="label_karaoke_best">BEST KARAOKE</string>
+  <string name="label_artist_best">BEST ΚΑΛΛΙΤΕΧΝΗΣ</string>
+
+  <string name="label_share">Μοιραστείτε Via</string>
+
+  <string name="noti_message">Έχετε προσέξει ποτέ;</string>
+  <string name="message_notice_about_image_service">Λόγω προβλημάτων πνευματικής ιδιοκτησίας των εικόνων, θα διακόψουμε προσωρινά την προβολή εικόνων.</string>
+  <string name="message_notice_about_youtube_terms">Για να πληροί τους Όρους Παροχής Υπηρεσιών του YouTube:\n- δεν μεταφορτώνει βίντεο του YouTube ή αρχεία mp3.\n- δεν αναπαράγει βίντεο στο παρασκήνιο.\n- δεν αποθηκεύει προσωρινά αρχεία βίντεο ή δεν υποστηρίζει αναπαραγωγή εκτός σύνδεσης.\n- Δεν αναπαράγεται βίντεο στην οθόνη κλειδώματος ή όταν η οθόνη είναι απενεργοποιημένη.\n\nΑλλά, μπορείτε να χρησιμοποιήσετε την αναδυόμενη συσκευή αναπαραγωγής για πολλαπλή αποθήκευση και τη λειτουργία κλειδώματος της συσκευής αναπαραγωγής.</string>
+  <string name="message_notice_about_youtube_terms_u21">Για να πληροί τους Όρους Παροχής Υπηρεσιών του YouTube:\n- δεν μεταφορτώνει βίντεο του YouTube ή αρχεία mp3.\n- δεν αναπαράγει βίντεο στο παρασκήνιο.\n- δεν αποθηκεύει προσωρινά αρχεία βίντεο ή δεν υποστηρίζει αναπαραγωγή εκτός σύνδεσης.\n- Δεν αναπαράγεται βίντεο στην οθόνη κλειδώματος ή όταν η οθόνη είναι απενεργοποιημένη.</string>
+</resources>

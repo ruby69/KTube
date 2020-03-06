@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">영상(베스트)</string>
+  <string name="title_million_video">영상(천만뷰이상)</string>
+  <string name="title_lyrics">가사</string>
+  <string name="title_fancam">팬캠/직캠</string>
+  <string name="title_karaoke">노래방</string>
+  <string name="title_artist">아티스트</string>
+  <string name="title_search">검색</string>
+
+  <string name="label_title_new">New</string>
+  <string name="label_title_best_d1">어제 베스트</string>
+  <string name="label_title_best_d7">지난 7일 베스트</string>
+  <string name="label_title_best_d30">지난 30일 베스트</string>
+  <string name="label_title_lifetime">전체</string>
+
+  <string name="label_video_million">천만뷰 이상</string>
+  <string name="label_video_best">베스트 영상</string>
+  <string name="label_fancam_best">베스트 팬캠</string>
+  <string name="label_lyric_best">베스트 가사</string>
+  <string name="label_karaoke_best">베스트 노래방</string>
+  <string name="label_artist_best">베스트 아이돌</string>
+
+  <string name="label_share">공유&#8230;</string>
+
+  <string name="noti_message">혹시 이거 보셨나요?</string>
+  <string name="message_notice_about_image_service">이미지 저작권 문제로, 이미지 서비스를 잠시 중단합니다.</string>
+  <string name="message_notice_about_youtube_terms">YouTube 서비스 이용약관에 따라서,\n동영상의 백그라운드 재생 또는 화면이 꺼져있거나 잠금화면 상태에서의 재생은 지원되지 않습니다.\n\n대신에 멀티태스킹을 위한 팝업 플레이어와 잠금 모드를 지원하며, 팝업 플레이어를 사용하면 음악을 재생하는 동안에도 다른 앱을 사용할 수 있습니다.</string>
+  <string name="message_notice_about_youtube_terms_u21">YouTube 서비스 이용약관에 따라서,\n동영상의 백그라운드 재생 또는 화면이 꺼져있거나 잠금화면 상태에서의 재생은 지원되지 않습니다.</string>
+</resources>

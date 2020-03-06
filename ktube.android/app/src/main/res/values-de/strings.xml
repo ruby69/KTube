@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">Video (Beste)</string>
+  <string name="title_million_video">Video (Millionen Ansichten)</string>
+  <string name="title_lyrics">TEXT</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">KÜNSTLER</string>
+  <string name="title_search">SUCHE</string>
+
+  <string name="label_title_new">Neu</string>
+  <string name="label_title_best_d1">Gestern am Besten</string>
+  <string name="label_title_best_d7">Letzte 7 Tage</string>
+  <string name="label_title_best_d30">Letzte 30 Tage</string>
+  <string name="label_title_lifetime">ALLE</string>
+
+  <string name="label_video_million">ÜBER 10 MILLIONEN ANSICHTEN</string>
+  <string name="label_video_best">BESTES Video</string>
+  <string name="label_fancam_best">BESTES FANCAM</string>
+  <string name="label_lyric_best">BESTES LYRISCHES</string>
+  <string name="label_karaoke_best">BESTES KARAOKE</string>
+  <string name="label_artist_best">BESTER KÜNSTLER</string>
+
+  <string name="label_share">Teilen per</string>
+
+  <string name="noti_message">Haben Sie schon einmal beobachtet?</string>
+  <string name="message_notice_about_image_service">Aufgrund von Bild-Copyright-Problemen werden wir vorübergehend keine Bilder mehr liefern.</string>
+  <string name="message_notice_about_youtube_terms">Um die YouTube-Nutzungsbedingungen zu erfüllen:\n- Lädt keine YouTube-Videos oder MP3-Dateien herunter.\n- Videos werden nicht im Hintergrund abgespielt.\n- Zwischenspeichert keine Videos oder unterstützt die Offline-Wiedergabe.\n- Videos werden nicht auf dem Sperrbildschirm wiedergegeben oder wenn der Bildschirm ausgeschaltet ist.\n\nAber Sie können den Pop-up-Player für Multitasking und den Player-Lock-Modus verwenden.</string>
+  <string name="message_notice_about_youtube_terms_u21">Um die YouTube-Nutzungsbedingungen zu erfüllen:\n- Lädt keine YouTube-Videos oder MP3-Dateien herunter.\n- Videos werden nicht im Hintergrund abgespielt.\n- Zwischenspeichert keine Videos oder unterstützt die Offline-Wiedergabe.\n- Videos werden nicht auf dem Sperrbildschirm wiedergegeben oder wenn der Bildschirm ausgeschaltet ist.</string>
+</resources>

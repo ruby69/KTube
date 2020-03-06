@@ -1,0 +1,67 @@
+spring:
+  profiles.active: develop
+  
+  datasource:
+    hikari:
+      pool-name: hikariCp
+      connection-test-query: SELECT 1
+
+  jackson:
+    time-zone: "Asia/Seoul"
+    serialization:
+      write-dates-as-timestamps: true
+
+mybatis:
+  type-aliases-package: com.appskimo.ktube.domain.model
+
+logging:
+  level:
+    root: INFO
+    org.apache.tomcat: OFF
+    org.springframework: INFO
+    com.appskimo.ktube: INFO
+    com.appskimo.ktube.domain.persist: INFO
+
+---
+#####################################################################
+spring:
+  profiles: develop
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ktube_dev?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: root
+    password:
+
+
+logging:
+  level:
+    root: INFO
+    com.appskimo.ktube.domain.persist: DEBUG
+
+---
+#####################################################################
+spring:
+  profiles: test
+  
+  datasource:
+    url: jdbc:mysql://10.0.0.1:3306/ktube_product
+    username: ktube
+    password: 
+
+logging:
+  level:
+    root: INFO
+
+---
+#####################################################################
+spring:
+  profiles: product
+  
+  datasource:
+    url: jdbc:mysql://10.0.0.1:3306/ktube_product
+    username: ktube
+    password: 
+
+logging:
+  level:
+    root: INFO

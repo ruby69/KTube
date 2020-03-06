@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">VIDEO (BEST)</string>
+  <string name="title_million_video">VIDEO (milioni di visualizzazioni)</string>
+  <string name="title_lyrics">TESTI</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">ARTISTA</string>
+  <string name="title_search">SEARCH</string>
+
+  <string name="label_title_new">Nuovo</string>
+  <string name="label_title_best_d1">Migliore di ieri</string>
+  <string name="label_title_best_d7">I migliori 7 giorni</string>
+  <string name="label_title_best_d30">I migliori 30 giorni</string>
+  <string name="label_title_lifetime">TUTTI</string>
+
+  <string name="label_video_million">OLTRE 10 MILIONI DI VISTA</string>
+  <string name="label_video_best">MIGLIOR VIDEO</string>
+  <string name="label_fancam_best">MIGLIOR FANCAM</string>
+  <string name="label_lyric_best">MIGLIOR LYRIC</string>
+  <string name="label_karaoke_best">MIGLIOR KARAOKE</string>
+  <string name="label_artist_best">MIGLIOR ARTISTA</string>
+
+  <string name="label_share">Condividere tramite</string>
+
+  <string name="noti_message">Avete mai guardato?</string>
+  <string name="message_notice_about_image_service">A causa di problemi relativi al copyright delle immagini, interromperemo temporaneamente la pubblicazione delle immagini.</string>
+  <string name="message_notice_about_youtube_terms">Per soddisfare i Termini di servizio di YouTube:\n- non scarica video di YouTube o file mp3.\n- non riproduce video in background.\n- non memorizza nella cache i video o supporta la riproduzione offline.\n- non riproduce video sullo schermo di blocco o quando lo schermo è spento.\n\nMa puoi usare il pop-up player per il multitasking e la modalità di blocco del lettore.</string>
+  <string name="message_notice_about_youtube_terms_u21">Per soddisfare i Termini di servizio di YouTube:\n- non scarica video di YouTube o file mp3.\n- non riproduce video in background.\n- non memorizza nella cache i video o supporta la riproduzione offline.\n- non riproduce video sullo schermo di blocco o quando lo schermo è spento.</string>
+</resources>

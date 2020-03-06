@@ -1,0 +1,68 @@
+spring:
+  profiles.active: develop
+  
+  datasource:
+    hikari:
+      pool-name: hikariCp
+
+mybatis:
+  type-aliases-package: com.appskimo.ktube.domain.model
+
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+
+logging:
+  level:
+    root: INFO
+    org.apache.tomcat: OFF
+    org.springframework: INFO
+    com.appskimo.ktube: INFO
+    com.appskimo.ktube.domain.persist: INFO
+
+---
+#####################################################################
+spring:
+  profiles: develop
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ktube_product?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: root
+    password:
+
+logging:
+  level:
+    root: INFO
+    com.appskimo.ktube.domain.persist: DEBUG
+
+---
+#####################################################################
+spring:
+  profiles: test
+  
+  datasource:
+    url: jdbc:mysql://10.0.0.1:3306/ktube_product
+    username: ktube
+    password: 
+
+logging:
+  level:
+    root: INFO
+
+---
+#####################################################################
+spring:
+  profiles: product
+  
+  datasource:
+    url: jdbc:mysql://10.0.0.1:3306/ktube_product
+    username: ktube
+    password: 
+
+server:
+  port: 18080
+
+logging:
+  level:
+    root: INFO

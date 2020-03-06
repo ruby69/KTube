@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">วีดีโอ (Best)</string>
+  <string name="title_million_video">วีดีโอ (Million Views)</string>
+  <string name="title_lyrics">เนื้อเพลง</string>
+  <string name="title_fancam">แฟนแคม</string>
+  <string name="title_karaoke">คาราโอเกะ</string>
+  <string name="title_artist">ศิลปิน</string>
+  <string name="title_search">SEARCH</string>
+
+  <string name="label_title_new">ใหม่</string>
+  <string name="label_title_best_d1">เมื่อวานนี้ที่ดีที่สุด</string>
+  <string name="label_title_best_d7">7 วันที่ดีที่สุด</string>
+  <string name="label_title_best_d30">30 วันที่ผ่านมาที่ดีที่สุด</string>
+  <string name="label_title_lifetime">ทั้งหมด</string>
+
+  <string name="label_video_million">ประมาณ 10 ล้านวิว</string>
+  <string name="label_video_best">BEST วีดีโอ</string>
+  <string name="label_fancam_best">BEST แฟนแคม</string>
+  <string name="label_lyric_best">BEST เนื้อเพลง</string>
+  <string name="label_karaoke_best">BEST คาราโอเกะ</string>
+  <string name="label_artist_best">BEST ศิลปิน</string>
+
+  <string name="label_share">แบ่งปันผ่าน</string>
+
+  <string name="noti_message">คุณเคยดู?</string>
+  <string name="message_notice_about_image_service">เนื่องจากปัญหาลิขสิทธิ์ภาพเราจะหยุดให้บริการภาพชั่วคราว</string>
+  <string name="message_notice_about_youtube_terms">เพื่อให้เป็นไปตามข้อกำหนดในการให้บริการของ YouTube:\n- ไม่ดาวน์โหลดวิดีโอ YouTube หรือไฟล์ mp3\n- ไม่เล่นวิดีโอในพื้นหลัง\n- ไม่แคชวิดีโอหรือสนับสนุนการเล่นแบบออฟไลน์\n- ไม่เล่นวิดีโอบนหน้าจอล็อกหรือเมื่อปิดหน้าจอ\n\nอย่างไรก็ตามคุณสามารถใช้เครื่องเล่นป๊อปอัพ สนับสนุนโหมดมัลติทาสกิ้งและล็อคโหมดผู้เล่น</string>
+  <string name="message_notice_about_youtube_terms_u21">เพื่อให้เป็นไปตามข้อกำหนดในการให้บริการของ YouTube:\n- ไม่ดาวน์โหลดวิดีโอ YouTube หรือไฟล์ mp3\n- ไม่เล่นวิดีโอในพื้นหลัง\n- ไม่แคชวิดีโอหรือสนับสนุนการเล่นแบบออฟไลน์\n- ไม่เล่นวิดีโอบนหน้าจอล็อกหรือเมื่อปิดหน้าจอ</string>
+</resources>

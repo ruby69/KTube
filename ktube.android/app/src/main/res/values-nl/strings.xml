@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">VIDEO (BESTE)</string>
+  <string name="title_million_video">VIDEO (miljoen keer bekeken)</string>
+  <string name="title_lyrics">LYRICS</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">ARTIEST</string>
+  <string name="title_search">SEARCH</string>
+
+  <string name="label_title_new">nieuwe</string>
+  <string name="label_title_best_d1">Yesterday\'s Best</string>
+  <string name="label_title_best_d7">Laatste 7 dagen Beste</string>
+  <string name="label_title_best_d30">Laatste 30 dagen Beste</string>
+  <string name="label_title_lifetime">ALLE</string>
+
+  <string name="label_video_million">MEER DAN 10 MILJOEN UITZICHTEN</string>
+  <string name="label_video_best">BESTE VIDEO</string>
+  <string name="label_fancam_best">BESTE FANCAM</string>
+  <string name="label_lyric_best">BESTE LYRIC</string>
+  <string name="label_karaoke_best">BESTE KARAOKE</string>
+  <string name="label_artist_best">BESTE KUNSTENAAR</string>
+
+  <string name="label_share">Deel via</string>
+
+  <string name="noti_message">Heb je wel eens gekeken?</string>
+  <string name="message_notice_about_image_service">Vanwege copyright-problemen met afbeeldingen zullen we tijdelijk geen afbeeldingen meer serveren.</string>
+  <string name="message_notice_about_youtube_terms">Om aan de YouTube-servicevoorwaarden te voldoen:\n- downloadt geen YouTube-video\'s of mp3-bestanden.\n- speelt geen video\'s op de achtergrond.\n- cache geen video\'s of ondersteuning voor offline afspelen.\n- speelt geen video\'s af op het vergrendelscherm of wanneer het scherm is uitgeschakeld.\n\nU kunt echter de pop-upspeler gebruiken. Het ondersteunt multitasking en de speler-vergrendelingsmodus.</string>
+  <string name="message_notice_about_youtube_terms_u21">Om aan de YouTube-servicevoorwaarden te voldoen:\n- downloadt geen YouTube-video\'s of mp3-bestanden.\n- speelt geen video\'s op de achtergrond.\n- cache geen video\'s of ondersteuning voor offline afspelen.\n- speelt geen video\'s af op het vergrendelscherm of wanneer het scherm is uitgeschakeld.</string>
+</resources>

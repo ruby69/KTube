@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <RelativeLayout
+    android:id="@+id/itemSelector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+      android:id="@+id/typeLView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/spacing_half"
+      android:visibility="gone">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_2x">
+
+        <ImageView
+          android:id="@+id/typeLImageView"
+          android:layout_width="match_parent"
+          android:layout_height="220dp"
+          android:contentDescription="@string/app_name"/>
+
+        <TextView
+          android:id="@+id/typeLTitleView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/typeLImageView"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="@dimen/spacing_1x"/>
+      </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+      android:id="@+id/typeSView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:visibility="gone">
+
+      <TextView
+        android:id="@+id/typeSTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/spacing_1x"
+        android:layout_marginStart="@dimen/spacing_1x"
+        android:background="@drawable/button_idol"
+        android:gravity="center"
+        android:maxLines="1"
+        android:minWidth="@dimen/spacing_10x"
+        android:padding="@dimen/spacing_1x"
+        android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+  </RelativeLayout>
+
+
+</merge>

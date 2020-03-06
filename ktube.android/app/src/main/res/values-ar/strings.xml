@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">فيديو (أفضل)</string>
+  <string name="title_million_video">فيديو (مليون مشاهدة)</string>
+  <string name="title_lyrics">كلمات الاغنية</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">كاريوكي</string>
+  <string name="title_artist">فنان</string>
+  <string name="title_search">بحث</string>
+
+  <string name="label_title_new">جديد</string>
+  <string name="label_title_best_d1">أفضل يوم أمس</string>
+  <string name="label_title_best_d7">آخر 7 أيام</string>
+  <string name="label_title_best_d30">آخر 30 يومًا الأفضل</string>
+  <string name="label_title_lifetime">الكل</string>
+
+  <string name="label_video_million">أكثر من 10 مليون مشاهدة</string>
+  <string name="label_video_best">أفضل فيديو</string>
+  <string name="label_fancam_best">أفضل FANCAM</string>
+  <string name="label_lyric_best">أفضل كلمات</string>
+  <string name="label_karaoke_best">أفضل كاريوكي</string>
+  <string name="label_artist_best">أفضل الفنان</string>
+
+  <string name="label_share">شارك عبر</string>
+
+  <string name="noti_message">هل شاهدت من أي وقت مضى؟</string>
+  <string name="message_notice_about_image_service">نظرًا لمشكلات حقوق الطبع والنشر المتعلقة بالصور ، سنوقف عرض الصور مؤقتًا.</string>
+  <string name="message_notice_about_youtube_terms">To meet YouTube Terms of Services:\n- does not download YouTube videos or mp3 files.\n- does not play videos in the background.\n- does not cache videos or support offline playback.\n- does not play videos on the lock screen or when the screen is turned off.\n\nBut, you can use the pop-up player for multitasking and the player lock-mode.</string>
+  <string name="message_notice_about_youtube_terms_u21">To meet YouTube Terms of Services:\n- does not download YouTube videos or mp3 files.\n- does not play videos in the background.\n- does not cache videos or support offline playback.\n- does not play videos on the lock screen or when the screen is turned off.</string>
+</resources>

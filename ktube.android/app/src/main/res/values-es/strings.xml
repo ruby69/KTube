@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">VIDEO (Mejor)</string>
+  <string name="title_million_video">VIDEO (Millones de visitas)</string>
+  <string name="title_lyrics">LETRA</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">ARTISTA</string>
+  <string name="title_search">SEARCH</string>
+
+  <string name="label_title_new">Nuevo</string>
+  <string name="label_title_best_d1">Mejor de ayer</string>
+  <string name="label_title_best_d7">Los últimos 7 días los mejores</string>
+  <string name="label_title_best_d30">Los últimos 30 días los mejores</string>
+  <string name="label_title_lifetime">TODAS</string>
+
+  <string name="label_video_million">MÁS DE 10 MILLONES DE VISTAS</string>
+  <string name="label_video_best">MEJOR VIDEO</string>
+  <string name="label_fancam_best">MEJOR FANCAM</string>
+  <string name="label_lyric_best">MEJOR LETRA</string>
+  <string name="label_karaoke_best">MEJOR KARAOKE</string>
+  <string name="label_artist_best">MEJOR ARTISTA</string>
+
+  <string name="label_share">Compartir via</string>
+
+  <string name="noti_message">¿Has visto alguna vez?</string>
+  <string name="message_notice_about_image_service">Debido a problemas de derechos de autor de imágenes, dejaremos de mostrar imágenes temporalmente.</string>
+  <string name="message_notice_about_youtube_terms">Para cumplir los Términos de servicios de YouTube:\n- No descarga videos de YouTube o mp3.\n- No reproduce videos en segundo plano.\n- No almacena videos en caché ni admite la reproducción sin conexión.\n- no reproduce videos en la pantalla de bloqueo o cuando la pantalla está apagada.\n\nSin embargo, puede usar el reproductor emergente para multitarea y el modo de bloqueo del jugador.</string>
+  <string name="message_notice_about_youtube_terms_u21">Para cumplir los Términos de servicios de YouTube:\n- No descarga videos de YouTube o mp3.\n- No reproduce videos en segundo plano.\n- No almacena videos en caché ni admite la reproducción sin conexión.\n- no reproduce videos en la pantalla de bloqueo o cuando la pantalla está apagada.</string>
+</resources>

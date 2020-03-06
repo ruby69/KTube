@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">@color/mainColor</color>
+  <color name="colorPrimaryDark">@color/mainColor_dark</color>
+  <color name="colorPrimaryLight">@color/mainColor_light</color>
+  <color name="colorAccent">@color/subColor</color>
+  <color name="textColorPrimary">#212121</color>
+  <color name="textColorSecondary">#727272</color>
+
+  <color name="white">#FFFFFFFF</color>
+  <color name="white_trans00">#00FFFFFF</color>
+  <color name="white_trans10">#1AFFFFFF</color>
+  <color name="white_trans20">#33FFFFFF</color>
+  <color name="white_trans50">#80FFFFFF</color>
+  <color name="white_trans80">#CCFFFFFF</color>
+  <color name="white_trans90">#E6FFFFFF</color>
+
+  <color name="black">#FF000000</color>
+  <color name="black_trans10">#1A000000</color>
+  <color name="black_trans20">#33000000</color>
+  <color name="black_trans50">#80000000</color>
+  <color name="black_trans80">#CC000000</color>
+  <color name="black_trans90">#E6000000</color>
+
+  <!-- teal & amber -->
+  <color name="mainColor">#FF009688</color>
+  <color name="mainColor_dark">#FF00796B</color>
+  <color name="mainColor_light">#FFB2DFDB</color>
+  <color name="mainColor_trans20">#33009688</color>
+  <color name="mainColor_trans50">#80009688</color>
+
+  <color name="subColor">#FFFFC107</color>
+  <color name="subColor_dark">#FFFFA000</color>
+  <color name="subColor_light">#FFFFECB3</color>
+  <color name="subColor_trans20">#33FFC107</color>
+  <color name="subColor_trans50">#80FFC107</color>
+
+
+  <color name="list_bg">#FFEFEFEF</color>
+  <color name="red">#FFB50909</color>
+  <color name="green">#FF4CAF50</color>
+  <color name="blue">#FF051E99</color>
+  <color name="yellow">#FFF4BD26</color>
+  <color name="grey">#FF9E9E9E</color>
+</resources>

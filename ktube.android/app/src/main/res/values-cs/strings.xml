@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">Video (Nejlepší)</string>
+  <string name="title_million_video">Video (miliony zobrazení)</string>
+  <string name="title_lyrics">TEXT</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">UMĚLEC</string>
+  <string name="title_search">VYHLEDÁVÁNÍ</string>
+
+  <string name="label_title_new">Nový</string>
+  <string name="label_title_best_d1">Včerejší Best</string>
+  <string name="label_title_best_d7">Posledních 7 dní Nejlepší</string>
+  <string name="label_title_best_d30">Posledních 30 dní Nejlepší</string>
+  <string name="label_title_lifetime">VŠECHNO</string>
+
+  <string name="label_video_million">PŘEHLED 10 MILIONŮ</string>
+  <string name="label_video_best">BEST VIDEO</string>
+  <string name="label_fancam_best">BEST FANCAM</string>
+  <string name="label_lyric_best">BEST LYRIC</string>
+  <string name="label_karaoke_best">BEST KARAOKE</string>
+  <string name="label_artist_best">BEST ARTIST</string>
+
+  <string name="label_share">podíl Via</string>
+
+  <string name="noti_message">Už jste někdy viděli?</string>
+  <string name="message_notice_about_image_service">Z důvodu problémů s autorskými právy budeme dočasně přestat zobrazovat obrázky.</string>
+  <string name="message_notice_about_youtube_terms">Splnění smluvních podmínek služby YouTube:\n- Nechce stahovat videa YouTube ani mp3 soubory.\n- Nehraje videa na pozadí.\n- neukládá do mezipaměti videa ani nepodporuje přehrávání offline.\n- Nehraje videozáznamy na uzamčené obrazovce nebo při vypnutí obrazovky.\n\nMůžete však použít pop-up přehrávač pro multitasking a přehrávač zámku.</string>
+  <string name="message_notice_about_youtube_terms_u21">Splnění smluvních podmínek služby YouTube:\n- Nechce stahovat videa YouTube ani mp3 soubory.\n- Nehraje videa na pozadí.\n- neukládá do mezipaměti videa ani nepodporuje přehrávání offline.\n- Nehraje videozáznamy na uzamčené obrazovce nebo při vypnutí obrazovky.</string>
+</resources>

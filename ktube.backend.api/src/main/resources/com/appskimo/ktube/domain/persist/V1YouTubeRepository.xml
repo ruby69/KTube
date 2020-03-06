@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.appskimo.ktube.domain.persist.V1YouTubeRepository">
+
+  <select id="findIdolVideosByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      `IdolVideo` iv
+      INNER JOIN `Video` v ON iv.`videoUid` = v.`videoUid`
+    WHERE iv.`idolUid` = #{p.idolUid}
+    <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+      <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+      <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+      <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+    </if>
+    <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+      ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+    </if>
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+  <select id="findVideosByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      (
+        SELECT v.`videoUid`
+        FROM `Video` v
+        WHERE v.`viewCount` &lt; 50000000 
+        <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+          <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+          <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+          <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+        </if>
+        <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+          ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+        </if>
+      ) a
+      INNER JOIN `Video` v ON a.`videoUid` = v.`videoUid`
+      INNER JOIN `IdolVideo` iv ON a.`videoUid` = iv.`videoUid`
+    <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+      <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+      <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+      <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+    </if>
+    <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+      ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+    </if>
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+  <select id="findBestsByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      vr.`viewCount` AS `rankViewCount`,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      ${p.tableName} vr
+      INNER JOIN `Video` v ON vr.`videoUid` = v.`videoUid`
+      INNER JOIN `IdolVideo` iv ON vr.`videoUid` = iv.`videoUid`
+    WHERE
+      vr.`dateIdx` = #{p.dateIdx}
+      AND v.`viewCount` &lt; 50000000
+    ORDER BY vr.`rankUid`
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+  <select id="findVideoByUid" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      `Video` v
+      INNER JOIN `IdolVideo` iv ON v.`videoUid` = iv.`videoUid`
+    WHERE
+      v.`videoUid` = #{videoUid}
+  </select>
+
+  <select id="countLastsByPage" resultType="int">
+    SELECT COUNT(1)
+    FROM
+      (
+        SELECT vr.*
+        FROM `VideoRankDaily` vr
+        WHERE vr.`dateIdx` &gt; #{p.dateIdx}
+        GROUP BY vr.`videoUid`
+      ) vr
+      INNER JOIN `Video` v ON vr.`videoUid` = v.`videoUid`
+      INNER JOIN `IdolVideo` iv ON vr.`videoUid` = iv.`videoUid`
+    WHERE 
+      v.`viewCount` &lt; 50000000
+  </select>
+
+  <select id="findLastsByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      vr.`rankViewCount`,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      (
+        SELECT
+          vr.*,
+          SUM(vr.`viewCount`) AS `rankViewCount`
+        FROM
+          `VideoRankDaily` vr
+        WHERE
+          vr.`dateIdx` &gt; #{p.dateIdx}
+        GROUP BY vr.`videoUid`
+        ORDER BY `rankViewCount` DESC
+      ) vr
+      INNER JOIN `Video` v ON vr.`videoUid` = v.`videoUid`
+      INNER JOIN `IdolVideo` iv ON vr.`videoUid` = iv.`videoUid`
+    WHERE
+      v.`viewCount` &lt; 50000000
+    GROUP BY vr.`videoUid`
+    ORDER BY `rankViewCount` DESC
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+
+
+
+
+
+  <select id="findShowVideoByUid" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*
+    FROM
+      `ShowVideo` v
+    WHERE
+      v.`videoUid` = #{videoUid}
+  </select>
+
+  <select id="findShowVideosByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*
+    FROM
+      (
+        SELECT v.`videoUid`
+        FROM `ShowVideo` v
+        WHERE
+          v.`showChannelUid` = #{p.showChannel}
+        ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt`
+      ) a
+      INNER JOIN `ShowVideo` v ON a.`videoUid` = v.`videoUid`
+    ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt`
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+
+
+
+
+  <select id="findFancamVideoByUid" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*
+    FROM
+      `FancamVideo` v
+    WHERE
+      v.`videoUid` = #{videoUid}
+  </select>
+
+  <select id="findFancamVideosByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*
+    FROM
+      (
+        SELECT v.`videoUid`
+        FROM `FancamVideo` v
+        <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+          <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+          <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+          <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+        </if>
+        <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+          ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+        </if>
+      ) a
+      INNER JOIN `FancamVideo` v ON a.`videoUid` = v.`videoUid`
+    <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+      <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+      <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+      <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+    </if>
+    <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+      ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+    </if>
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+  <select id="findFancamBestsByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      vr.`viewCount` AS `rankViewCount`
+    FROM
+      ${p.tableName} vr
+      INNER JOIN `FancamVideo` v ON vr.`videoUid` = v.`videoUid`
+    WHERE
+      vr.`dateIdx` = #{p.dateIdx}
+    ORDER BY vr.`rankUid`
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+  <select id="findFancamLastsByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      vr.`rankViewCount`
+    FROM
+      (
+        SELECT
+          vr.*,
+          SUM(vr.`viewCount`) AS `rankViewCount`
+        FROM
+          `FancamVideoRankDaily` vr
+        WHERE
+          vr.`dateIdx` &gt; #{p.dateIdx}
+        GROUP BY vr.`videoUid`
+        ORDER BY `rankViewCount` DESC
+      ) vr
+      INNER JOIN `FancamVideo` v ON vr.`videoUid` = v.`videoUid`
+    GROUP BY vr.`videoUid`
+    ORDER BY `rankViewCount` DESC
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+
+
+
+
+  <select id="findLyricsVideoByUid" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*
+    FROM
+      `LyricsVideo` v
+    WHERE
+      v.`videoUid` = #{videoUid}
+  </select>
+
+  <select id="findLyricsVideosByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*
+    FROM
+      (
+        SELECT v.`videoUid`
+        FROM `LyricsVideo` v
+        <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+          <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+          <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+          <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+        </if>
+        <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+          ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+        </if>
+      ) a
+      INNER JOIN `LyricsVideo` v ON a.`videoUid` = v.`videoUid`
+    <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+      <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+      <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+      <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+    </if>
+    <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+      ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+    </if>
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+
+
+
+
+
+
+  <select id="findIdolKaraokeVideosByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      `IdolKaraokeVideo` iv
+      INNER JOIN `KaraokeVideo` v ON iv.`videoUid` = v.`videoUid`
+    WHERE iv.`idolUid` = #{p.idolUid}
+    <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+      <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+      <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+      <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+    </if>
+    <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+      ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+    </if>
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+  <select id="findKaraokeVideosByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      (
+        SELECT v.`videoUid`
+        FROM `KaraokeVideo` v
+        <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+          <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+          <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+          <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+        </if>
+        <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+          ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+        </if>
+      ) a
+      INNER JOIN `KaraokeVideo` v ON a.`videoUid` = v.`videoUid`
+      INNER JOIN `IdolKaraokeVideo` iv ON a.`videoUid` = iv.`videoUid`
+    <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+      <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+      <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+      <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+    </if>
+    <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+      ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+    </if>
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+  <select id="findKaraokeBestsByPage" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      vr.`viewCount` AS `rankViewCount`,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      ${p.tableName} vr
+      INNER JOIN `KaraokeVideo` v ON vr.`videoUid` = v.`videoUid`
+      INNER JOIN `IdolKaraokeVideo` iv ON vr.`videoUid` = iv.`videoUid`
+    WHERE
+      vr.`dateIdx` = #{p.dateIdx}
+    ORDER BY vr.`rankUid`
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+  
+  <select id="findKaraokeVideoByUid" resultType="com.appskimo.ktube.domain.model.YouTube$V1Video">
+    SELECT
+      v.*,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      `KaraokeVideo` v
+      INNER JOIN `IdolKaraokeVideo` iv ON v.`videoUid` = iv.`videoUid`
+    WHERE
+      v.`videoUid` = #{videoUid}
+  </select>
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">视频（最佳）</string>
+  <string name="title_million_video">视频（百万视图）</string>
+  <string name="title_lyrics">歌词</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">卡拉OK</string>
+  <string name="title_artist">艺术家</string>
+  <string name="title_search">SEARCH</string>
+
+  <string name="label_title_new">新视频</string>
+  <string name="label_title_best_d1">昨天最快</string>
+  <string name="label_title_best_d7">过去7天最佳</string>
+  <string name="label_title_best_d30">过去30天最佳</string>
+  <string name="label_title_lifetime">所有</string>
+
+  <string name="label_video_million">超过1000万的视图</string>
+  <string name="label_video_best">最佳视频</string>
+  <string name="label_fancam_best">最佳FANCAM</string>
+  <string name="label_lyric_best">最佳歌词</string>
+  <string name="label_karaoke_best">最佳卡拉OK</string>
+  <string name="label_artist_best">最佳艺术家</string>
+
+  <string name="label_share">分享Via</string>
+
+  <string name="noti_message">你有没有看过？</string>
+  <string name="message_notice_about_image_service">由于图像版权问题，我们将暂时停止提供图像。</string>
+  <string name="message_notice_about_youtube_terms">要符合YouTube服务条款：\n- 不会下载YouTube视频或mp3文件。\n- 不在后台播放视频。\n- 不会缓存视频或支持离线播放。\n- 不在锁定屏幕上播放视频或关闭屏幕。\n\n但是，您可以使用弹出式播放器。 它确实支持多任务处理和播放器锁定模式。</string>
+  <string name="message_notice_about_youtube_terms_u21">要符合YouTube服务条款：\n- 不会下载YouTube视频或mp3文件。\n- 不在后台播放视频。\n- 不会缓存视频或支持离线播放。\n- 不在锁定屏幕上播放视频或关闭屏幕。</string>
+</resources>

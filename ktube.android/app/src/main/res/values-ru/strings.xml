@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">ВИДЕО (BEST)</string>
+  <string name="title_million_video">ВИДЕО (Миллион просмотров)</string>
+  <string name="title_lyrics">ТЕКСТ ПЕСНИ</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">КАРАОКЕ</string>
+  <string name="title_artist">ХУДОЖНИК</string>
+  <string name="title_search">SEARCH</string>
+
+  <string name="label_title_new">новый</string>
+  <string name="label_title_best_d1">Вчера Лучший</string>
+  <string name="label_title_best_d7">Последние 7 дней Лучшие</string>
+  <string name="label_title_best_d30">Последние 30 дней Лучшие</string>
+  <string name="label_title_lifetime">ВСЕ</string>
+
+  <string name="label_video_million">Более 10 миллионов зрителей</string>
+  <string name="label_video_best">ЛУЧШИЕ ВИДЕО</string>
+  <string name="label_fancam_best">ЛУЧШИЙ ФАНТАМ</string>
+  <string name="label_lyric_best">ЛУЧШАЯ ЛИРИКА</string>
+  <string name="label_karaoke_best">ЛУЧШИЙ КАРАОКЕ</string>
+  <string name="label_artist_best">ЛУЧШИЙ ХУДОЖНИК</string>
+
+  <string name="label_share">Отправить по</string>
+
+  <string name="noti_message">Вы когда-нибудь смотрел?</string>
+  <string name="message_notice_about_image_service">Из-за проблем с авторскими правами на изображение мы временно прекратим показ изображений.</string>
+  <string name="message_notice_about_youtube_terms">Чтобы ознакомиться с Условиями использования YouTube:\n- не загружает видео на YouTube или файлы MP3.\n- не воспроизводит видео в фоновом режиме.\n- не кэширует видео или не поддерживает офлайн-воспроизведение.\n- не воспроизводит видео на экране блокировки или когда экран выключен.\n\nОднако вы можете использовать всплывающий проигрыватель. Он поддерживает многозадачность и режим блокировки проигрывателя.</string>
+  <string name="message_notice_about_youtube_terms_u21">Чтобы ознакомиться с Условиями использования YouTube:\n- не загружает видео на YouTube или файлы MP3.\n- не воспроизводит видео в фоновом режиме.\n- не кэширует видео или не поддерживает офлайн-воспроизведение.\n- не воспроизводит видео на экране блокировки или когда экран выключен.</string>
+</resources>

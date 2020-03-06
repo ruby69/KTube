@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">VIDEO (MEILLEUR)</string>
+  <string name="title_million_video">VIDEO (million de vues)</string>
+  <string name="title_lyrics">PAROLES</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">ARTISTE</string>
+  <string name="title_search">CHERCHER</string>
+
+  <string name="label_title_new">Nouveau</string>
+  <string name="label_title_best_d1">Meilleures ventes</string>
+  <string name="label_title_best_d7">7 derniers jours Meilleur</string>
+  <string name="label_title_best_d30">30 derniers jours Meilleur</string>
+  <string name="label_title_lifetime">TOUT</string>
+
+  <string name="label_video_million">PLUS DE 10 MILLIONS DE VUES</string>
+  <string name="label_video_best">MEILLEURE VIDEO</string>
+  <string name="label_fancam_best">MEILLEURE FANCAM</string>
+  <string name="label_lyric_best">MEILLEURE PAROLES</string>
+  <string name="label_karaoke_best">MEILLEURE KARAOKE</string>
+  <string name="label_artist_best">MEILLEURE ARTISTE</string>
+
+  <string name="label_share">Partage via</string>
+
+  <string name="noti_message">Avez-vous déjà regardé?</string>
+  <string name="message_notice_about_image_service">En raison de problèmes de droits d\'image, nous cesserons temporairement de diffuser des images.</string>
+  <string name="message_notice_about_youtube_terms">Pour respecter les conditions d\'utilisation de YouTube:\n- ne télécharge pas les vidéos YouTube ou les fichiers mp3.\n- ne joue pas de vidéos en arrière-plan.\n- ne met pas en cache les vidéos ou ne prend pas en charge la lecture hors connexion.\n- ne lit pas les vidéos sur l\'écran de verrouillage ou lorsque l\'écran est éteint.\n\nMais, vous pouvez utiliser le lecteur pop-up pour le multitâche et le mode de verrouillage du lecteur.</string>
+  <string name="message_notice_about_youtube_terms_u21">Pour respecter les conditions d\'utilisation de YouTube:\n- ne télécharge pas les vidéos YouTube ou les fichiers mp3.\n- ne joue pas de vidéos en arrière-plan.\n- ne met pas en cache les vidéos ou ne prend pas en charge la lecture hors connexion.\n- ne lit pas les vidéos sur l\'écran de verrouillage ou lorsque l\'écran est éteint.</string>
+</resources>

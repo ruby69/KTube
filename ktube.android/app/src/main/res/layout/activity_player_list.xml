@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/list_bg"
+  android:keepScreenOn="true">
+
+  <com.pierfrancescosoffritti.androidyoutubeplayer.player.YouTubePlayerView
+    android:id="@+id/youtubeView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/youtubeView"
+    android:background="@color/list_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clipToPadding="false"
+      android:paddingTop="@dimen/spacing_7x"
+      android:scrollbars="vertical"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+  </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/youtubeView"
+    android:layout_margin="@dimen/spacing_1x"
+    android:orientation="horizontal">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="horizontal">
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_1x"
+        android:src="@drawable/ic_playlist_add_black_24dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/grey"
+        app:elevation="0dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="0dp"
+        app:useCompatPadding="true" />
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_1x"
+        android:src="@drawable/ic_favorite_black_24dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/grey"
+        app:elevation="0dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="0dp"
+        app:useCompatPadding="true" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="end"
+      android:orientation="horizontal">
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_1x"
+        android:src="@drawable/ic_launch_black_24dp"
+        android:tint="@color/white"
+        android:visibility="gone"
+        app:elevation="0dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="0dp"
+        app:useCompatPadding="true" />
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/playMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_repeat_black_24dp"
+        android:tint="@color/white"
+        app:backgroundTint="@color/grey"
+        app:elevation="0dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="0dp"
+        app:useCompatPadding="true" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

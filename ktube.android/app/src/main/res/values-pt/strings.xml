@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">VIDEO (MELHOR)</string>
+  <string name="title_million_video">VIDEO (milhões de visualizações)</string>
+  <string name="title_lyrics">LETRA</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">ARTISTA</string>
+  <string name="title_search">SEARCH</string>
+
+  <string name="label_title_new">Novo</string>
+  <string name="label_title_best_d1">Ontem Melhor</string>
+  <string name="label_title_best_d7">Últimos 7 dias Melhor</string>
+  <string name="label_title_best_d30">Últimos 30 dias Melhor</string>
+  <string name="label_title_lifetime">TODOS</string>
+
+  <string name="label_video_million">MAIS DE 10 MILHÕES DE VISUALIZAÇÕES</string>
+  <string name="label_video_best">MELHOR VIDEO</string>
+  <string name="label_fancam_best">MELHOR FANCAM</string>
+  <string name="label_lyric_best">MELHOR LETRA</string>
+  <string name="label_karaoke_best">MELHOR KARAOKE</string>
+  <string name="label_artist_best">MELHOR ARTISTA</string>
+
+  <string name="label_share">Compartilhar via</string>
+
+  <string name="noti_message">Você já assistiu?</string>
+  <string name="message_notice_about_image_service">Devido a problemas de direitos autorais de imagens, paramos temporariamente de veicular imagens.</string>
+  <string name="message_notice_about_youtube_terms">Para atender aos Termos de Serviços do YouTube:\n- não faz o download de vídeos do YouTube ou arquivos de mp3.\n- não reproduz vídeos em segundo plano.\n- não armazena em cache vídeos ou suporte a reprodução off-line.\n- não reproduz vídeos na tela de bloqueio ou quando a tela está desligada.\n\nNo entanto, você pode usar o player pop-up. Suporta a multitarefa e o modo de bloqueio do jogador.</string>
+  <string name="message_notice_about_youtube_terms_u21">Para atender aos Termos de Serviços do YouTube:\n- não faz o download de vídeos do YouTube ou arquivos de mp3.\n- não reproduz vídeos em segundo plano.\n- não armazena em cache vídeos ou suporte a reprodução off-line.\n- não reproduz vídeos na tela de bloqueio ou quando a tela está desligada.</string>
+</resources>

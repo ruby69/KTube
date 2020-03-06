@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">ВИДЕО(най-доброто)</string>
+  <string name="title_million_video">ВИДЕО(милиони показвания)</string>
+  <string name="title_lyrics">ТЕКСТОВЕ НА ПЕСНИ</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">КАРАОКЕ</string>
+  <string name="title_artist">художник</string>
+  <string name="title_search">ТЪРСЕНЕ</string>
+
+  <string name="label_title_new">нов</string>
+  <string name="label_title_best_d1">Вчерашната Best</string>
+  <string name="label_title_best_d7">Последните 7 дни Най-добър</string>
+  <string name="label_title_best_d30">Последните 30 дни Най-добър</string>
+  <string name="label_title_lifetime">ВСИЧКО</string>
+
+  <string name="label_video_million">НАЛИЧИЕ НА 10 МИЛИОНА</string>
+  <string name="label_video_best">НАЙ-ДОБЪР ВИДЕО</string>
+  <string name="label_fancam_best">НАЙ-ДОБЪР FANCAM</string>
+  <string name="label_lyric_best">НАЙ-ДОБЪР лиричен</string>
+  <string name="label_karaoke_best">НАЙ-ДОБЪР КАРАОКЕ</string>
+  <string name="label_artist_best">НАЙ-ДОБЪР художник</string>
+
+  <string name="label_share">Сподели Via</string>
+
+  <string name="noti_message">Били ли сте някога гледал?</string>
+  <string name="message_notice_about_image_service">Поради проблеми, свързани с авторски права, временно ще спрем да показваме изображения.</string>
+  <string name="message_notice_about_youtube_terms">За да отговаряте на Общите условия на YouTube:\n- не изтегля видеоклипове или mp3 файлове в YouTube.\n- не възпроизвежда видео във фонов режим.\n- не кешира видеоклипове или не поддържа възпроизвеждане офлайн.\n- не възпроизвежда видеоклипове на заключения екран или когато екранът е изключен.\n\nНо можете да използвате изскачащия плейър за мултитаскинг и режима на заключване на плейъра.</string>
+  <string name="message_notice_about_youtube_terms_u21">За да отговаряте на Общите условия на YouTube:\n- не изтегля видеоклипове или mp3 файлове в YouTube.\n- не възпроизвежда видео във фонов режим.\n- не кешира видеоклипове или не поддържа възпроизвеждане офлайн.\n- не възпроизвежда видеоклипове на заключения екран или когато екранът е изключен.</string>
+</resources>

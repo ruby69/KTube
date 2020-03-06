@@ -1,0 +1,77 @@
+<resources>
+  <string name="app_name" translatable="false">KPOP for YouTube</string>
+  <string name="admob_app_id" translatable="false">xxxxxxxxxx</string>
+  <string name="admob_interstitial_unit_id" translatable="false">xxxxxxxxxx</string>
+  <string name="admob_banner_unit_id" translatable="false">xxxxxxxxxx</string>
+
+  <string name="base_url_dev" translatable="false">http://api.some.domain:8080/api/</string>
+  <string name="youtube_url" formatted="true" translatable="false">https://www.youtube.com/watch?v=%s</string>
+  <string name="video_img_medium" formatted="true" translatable="false">https://i.ytimg.com/vi/%s/mqdefault.jpg</string>
+  <string name="video_img_thumb" formatted="true" translatable="false">https://i.ytimg.com/vi/%s/default.jpg</string>
+
+  <string name="ok" translatable="false">OK</string>
+  <string name="label_continue" translatable="false">Continue</string>
+  <string name="title_service_radio" translatable="false">KTube Radio</string>
+  <string name="label_confirm" translatable="false">Confirm</string>
+  <string name="label_cancel" translatable="false">Cancel</string>
+
+  <string name="label_noti_channel_alarm" translatable="false">ktube_noti_alarm</string>
+  <string name="label_noti_channel_floating" translatable="false">ktube_noti_floating</string>
+  <string name="label_noti_channel_radio" translatable="false">ktube_noti_radio</string>
+  <string name="label_noti_floating_title" translatable="false">Popup Player</string>
+  <string name="label_noti_floating_text" translatable="false">Tab for finishing floating popup player.</string>
+  <string name="label_noti_radio_text" translatable="false">Tab for finishing radio player.</string>
+
+  <!-- ################################################################################################################ -->
+  <string name="title_music_video">VIDEO(BEST)</string>
+  <string name="title_million_video">VIDEO(Million Views)</string>
+  <string name="title_lyrics">LYRICS</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">ARTIST</string>
+  <string name="title_search">SEARCH</string>
+  <string name="title_radio" translatable="false">RADIO</string>
+  <string name="title_my" translatable="false">MY</string>
+  <string name="title_music_chart" translatable="false">YouTube Music Charts</string>
+
+  <string name="label_title_new">New</string>
+  <string name="label_title_best_d1">Yesterday\'s Best</string>
+  <string name="label_title_best_d7">Last 7 days Best</string>
+  <string name="label_title_best_d30">Last 30 days Best</string>
+  <string name="label_title_lifetime">ALL</string>
+  <string name="label_title_over10m" translatable="false">10M▲</string>
+  <string name="label_title_over15m" translatable="false">15M▲</string>
+  <string name="label_title_over30m" translatable="false">30M▲</string>
+  <string name="label_title_over50m" translatable="false">50M▲</string>
+
+  <string name="label_video_million">OVER 10 MILLION VIEWS</string>
+  <string name="label_video_best">BEST VIDEO</string>
+  <string name="label_fancam_best">BEST FANCAM</string>
+  <string name="label_lyric_best">BEST LYRIC</string>
+  <string name="label_karaoke_best">BEST KARAOKE</string>
+  <string name="label_artist_best">BEST ARTIST</string>
+
+  <string name="label_share">Share Via&#8230;</string>
+  <string name="label_more" translatable="false">MORE</string>
+
+  <string name="noti_message">Have you ever watched?</string>
+  <string name="message_notice_about_image_service">Due to image copyright issues, we will temporarily stop serving images.</string>
+  <string name="message_notice_about_youtube_terms">To meet YouTube Terms of Services:\n- does not download YouTube videos or mp3 files.\n- does not play videos in the background.\n- does not cache videos or support offline playback.\n- does not play videos on the lock screen or when the screen is turned off.\n\nBut, you can use the pop-up player for multitasking and the player lock-mode.</string>
+  <string name="message_notice_about_youtube_terms_u21">To meet YouTube Terms of Services:\n- does not download YouTube videos or mp3 files.\n- does not play videos in the background.\n- does not cache videos or support offline playback.\n- does not play videos on the lock screen or when the screen is turned off.</string>
+  <string name="message_common_net_error" translatable="false">An unexpected network error occurred.</string>
+  <string name="message_video_unavailable" translatable="false">The uploader has not made this video available.</string>
+  <string name="message_video_not_found" translatable="false">Not found video.</string>
+  <string name="message_video_wrong" translatable="false">Oops! Something went wrong.</string>
+  <string name="message_wait_player_init" translatable="false">Please wait while player initialize.</string>
+
+  <string name="label_noti_music_chart" translatable="false">YouTube Music Charts</string>
+
+  <string name="url_store_app" formatted="true" translatable="false">market://details?id=%1$s</string>
+  <string name="url_store_web" formatted="true" translatable="false">https://play.google.com/store/apps/details?id=%1$s</string>
+  <string name="db_name" translatable="false">ktube</string>
+  <integer name="db_version">3</integer>
+
+  <array name="t_devices">
+    <item>xxxxxxxxxx</item>
+  </array>
+</resources>

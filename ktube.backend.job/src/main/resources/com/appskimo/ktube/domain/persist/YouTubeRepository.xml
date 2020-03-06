@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.appskimo.ktube.domain.persist.YouTubeRepository">
+
+  <select id="findVideosByPage" resultType="com.appskimo.ktube.domain.model.YouTube$Video">
+    SELECT
+      v.*,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      (
+        SELECT v.`videoUid`
+        FROM `Video` v
+        <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+          <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+          <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+          <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+        </if>
+        <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+          ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+        </if>
+      ) a
+      INNER JOIN `Video` v ON a.`videoUid` = v.`videoUid`
+      INNER JOIN `IdolVideo` iv ON a.`videoUid` = iv.`videoUid`
+    <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+      <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+      <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+      <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+    </if>
+    <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+      ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+    </if>
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+  <select id="findFancamVideosByPage" resultType="com.appskimo.ktube.domain.model.YouTube$Video">
+    SELECT
+      v.*
+    FROM
+      (
+        SELECT v.`videoUid`
+        FROM `FancamVideo` v
+        <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+          <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+          <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+          <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+        </if>
+        <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+          ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+        </if>
+      ) a
+      INNER JOIN `FancamVideo` v ON a.`videoUid` = v.`videoUid`
+    <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+      <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+      <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+      <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+    </if>
+    <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+      ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+    </if>
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+  <select id="findKaraokeVideosByPage" resultType="com.appskimo.ktube.domain.model.YouTube$Video">
+    SELECT
+      v.*,
+      iv.`idolUid` AS `idolUid`
+    FROM
+      (
+        SELECT v.`videoUid`
+        FROM `KaraokeVideo` v
+        <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+          <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+          <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+          <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+        </if>
+        <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+          ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+        </if>
+      ) a
+      INNER JOIN `KaraokeVideo` v ON a.`videoUid` = v.`videoUid`
+      INNER JOIN `IdolKaraokeVideo` iv ON a.`videoUid` = iv.`videoUid`
+    <if test="@org.springframework.util.StringUtils@hasText(p.order)" >
+      <if test="p.order == 'time'">ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC</if>
+      <if test="p.order == 'view'">ORDER BY v.`viewCount` DESC</if>
+      <if test="p.order == 'like'">ORDER BY v.`likeCount` DESC</if>
+    </if>
+    <if test="!@org.springframework.util.StringUtils@hasText(p.order)" >
+      ORDER BY v.`publishedAtIdx` DESC, v.`publishedAt` DESC
+    </if>
+    LIMIT #{beginIndex}, #{scale}
+  </select>
+
+  
+</mapper>

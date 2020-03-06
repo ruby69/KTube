@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd" updateCheck="false">
+
+  <defaultCache eternal="false" maxElementsInMemory="1000" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="600" memoryStoreEvictionPolicy="LRU" />
+
+  <cache name="cache_videos" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="10800" memoryStoreEvictionPolicy="LRU"/>
+  <cache name="cache_fancams" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="10800" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_lyrics" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="10800" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_karaoke" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="10800" memoryStoreEvictionPolicy="LRU"/>
+  <cache name="cache_rank" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="86400" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_fancamrank" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="86400" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_karaokerank" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="86400" memoryStoreEvictionPolicy="LRU"/>
+  <cache name="cache_idols" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="86400" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_images" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="86400" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_tvshows" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="345600" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_radios" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="2592000" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_search" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="180" memoryStoreEvictionPolicy="LRU"/>
+  
+  
+
+  <cache name="cache_v2_videos" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="10800" memoryStoreEvictionPolicy="LRU"/>
+  <cache name="cache_v2_fancams" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="10800" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_v2_lyrics" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="10800" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_v2_karaoke" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="10800" memoryStoreEvictionPolicy="LRU"/>
+  <cache name="cache_v2_rank" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="86400" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_v2_fancamrank" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="86400" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_v2_karaokerank" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="86400" memoryStoreEvictionPolicy="LRU"/>
+  <cache name="cache_v2_idols" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="86400" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_v2_images" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="86400" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_v2_radios" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="2592000" memoryStoreEvictionPolicy="LRU"/> 
+  <cache name="cache_v2_search" eternal="false" maxElementsInMemory="300" overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0" timeToLiveSeconds="180" memoryStoreEvictionPolicy="LRU"/> 
+</ehcache>

@@ -1,0 +1,84 @@
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <!--<group-->
+    <!--android:id="@+id/grp0"-->
+    <!--android:checkableBehavior="single">-->
+    <!--<item-->
+      <!--android:id="@+id/menuMusicChart"-->
+      <!--android:checkable="false"-->
+      <!--android:icon="@drawable/ic_subscriptions_black_24dp"-->
+      <!--android:title="@string/title_music_chart"/>-->
+
+  <!--</group>-->
+
+  <group
+    android:id="@+id/grp1"
+    android:checkableBehavior="single">
+    <item
+      android:id="@+id/menuFavorite"
+      android:checkable="false"
+      android:icon="@drawable/ic_loyalty_black_24dp"
+      android:title="@string/title_my"/>
+
+    <item
+      android:id="@+id/menuSearch"
+      android:checkable="false"
+      android:icon="@drawable/ic_search_black_24dp"
+      android:title="@string/title_search"/>
+
+    <item
+      android:id="@+id/menuArtist"
+      android:checkable="false"
+      android:icon="@drawable/ic_face_black_24dp"
+      android:title="@string/title_artist"/>
+
+  </group>
+
+  <group
+    android:id="@+id/grp2"
+    android:checkableBehavior="single">
+    <item
+      android:id="@+id/menuVideo"
+      android:checkable="false"
+      android:icon="@drawable/ic_music_video_black_24dp"
+      android:title="@string/title_music_video"/>
+
+    <item
+      android:id="@+id/menuMillion"
+      android:checkable="false"
+      android:title="@string/title_million_video"/>
+
+    <item
+      android:id="@+id/menuLyrics"
+      android:checkable="false"
+      android:icon="@drawable/ic_subtitles_black_24dp"
+      android:title="@string/title_lyrics"/>
+
+    <item
+      android:id="@+id/menuFancam"
+      android:checkable="false"
+      android:icon="@drawable/ic_videocam_black_24dp"
+      android:title="@string/title_fancam"/>
+
+    <item
+      android:id="@+id/menuKaraoke"
+      android:checkable="false"
+      android:icon="@drawable/ic_mic_black_24dp"
+      android:title="@string/title_karaoke"/>
+
+  </group>
+
+  <group
+    android:id="@+id/grp4"
+    android:checkableBehavior="single">
+    <item
+      android:id="@+id/menuRadio"
+      android:checkable="false"
+      android:icon="@drawable/ic_radio_black_24dp"
+      android:title="@string/title_radio"/>
+
+  </group>
+
+</menu>

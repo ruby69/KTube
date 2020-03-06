@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_music_video">Video (bedste)</string>
+  <string name="title_million_video">Video (Million Views)</string>
+  <string name="title_lyrics">LYRICS</string>
+  <string name="title_fancam">FANCAM</string>
+  <string name="title_karaoke">KARAOKE</string>
+  <string name="title_artist">ARTIST</string>
+  <string name="title_search">SØGE</string>
+
+  <string name="label_title_new">Ny</string>
+  <string name="label_title_best_d1">Gårsdagens bedste</string>
+  <string name="label_title_best_d7">Sidste 7 dage Bedste</string>
+  <string name="label_title_best_d30">Sidste 30 dage Bedste</string>
+  <string name="label_title_lifetime">ALLE</string>
+
+  <string name="label_video_million">OVER 10 MILLIONER VISNINGER</string>
+  <string name="label_video_best">BEDSTE VIDEO</string>
+  <string name="label_fancam_best">BEDSTE FANCAM</string>
+  <string name="label_lyric_best">BEDSTE LYRIC</string>
+  <string name="label_karaoke_best">BEDSTE KARAOKE</string>
+  <string name="label_artist_best">BEDSTE ARTIST</string>
+
+  <string name="label_share">Del Via</string>
+
+  <string name="noti_message">Har du nogensinde set?</string>
+  <string name="message_notice_about_image_service">På grund af problemer med billedophavsret vil vi midlertidigt stoppe med at vise billeder.</string>
+  <string name="message_notice_about_youtube_terms">For at opfylde YouTube Servicevilkår:\n- downloader ikke YouTube-videoer eller mp3-filer.\n- afspiller ikke videoer i baggrunden.\n- cache ikke videoer eller understøtte offline afspilning.\n- afspiller ikke videoer på låseskærmen eller når skærmen er slukket.\n\nMen du kan bruge pop-up-afspilleren til multitasking og afspilleren låsemodus.</string>
+  <string name="message_notice_about_youtube_terms_u21">For at opfylde YouTube Servicevilkår:\n- downloader ikke YouTube-videoer eller mp3-filer.\n- afspiller ikke videoer i baggrunden.\n- cache ikke videoer eller understøtte offline afspilning.\n- afspiller ikke videoer på låseskærmen eller når skærmen er slukket.</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/typeLView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_quarter"
+    android:minHeight="200dp">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/spacing_2x">
+
+      <RelativeLayout
+        android:id="@+id/imageLayer"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+          android:id="@+id/typeLImageView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:contentDescription="@string/app_name"
+          android:scaleType="fitXY"/>
+
+        <TextView
+          android:id="@+id/typeLPublishedAtView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentEnd="true"
+          android:background="@drawable/rank_indicator"
+          android:gravity="center_horizontal"
+          android:paddingEnd="@dimen/spacing_1x"
+          android:paddingLeft="@dimen/spacing_1x"
+          android:paddingRight="@dimen/spacing_1x"
+          android:paddingStart="@dimen/spacing_1x"
+          android:textColor="@color/white"/>
+
+        <TextView
+          android:id="@+id/typeLCountView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignEnd="@+id/typeLImageView"
+          android:layout_alignParentTop="true"
+          android:background="@drawable/rank_indicator"
+          android:gravity="center_horizontal"
+          android:paddingEnd="@dimen/spacing_1x"
+          android:paddingLeft="@dimen/spacing_1x"
+          android:paddingRight="@dimen/spacing_1x"
+          android:paddingStart="@dimen/spacing_1x"
+          android:textColor="@color/white"
+          android:visibility="invisible"/>
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:orientation="horizontal">
+
+          <ImageButton
+            android:id="@+id/playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/empty2"
+            android:padding="@dimen/spacing_half"
+            android:layout_margin="@dimen/spacing_quarter"
+            android:src="@drawable/ic_playlist_play_black_24dp"
+            android:tint="@color/white"/>
+
+          <ImageButton
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/empty2"
+            android:padding="@dimen/spacing_half"
+            android:layout_margin="@dimen/spacing_quarter"
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:tint="@color/white"/>
+        </LinearLayout>
+
+      </RelativeLayout>
+
+      <TextView
+        android:id="@+id/typeLTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageLayer"
+        android:layout_marginTop="@dimen/spacing_1x"/>
+
+    </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+</merge>
