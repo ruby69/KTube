@@ -1,3 +1,6 @@
+# ⛔️ DEPRECATED
+This repository is now deprecated. 
+
 # KTube (K-Pop Tube)
 This app helps you get popular(trending) and newest KPOP music videos.
 It had been downloaded more than 2.2 million times and had rated 4.15 out of 5 stars based on 7.5 thousand ratings.
